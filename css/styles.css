@@ -168,17 +168,20 @@ button {
 .header-contacts{
     color: var(--small-text-color);
     display: flex;
+    align-items: center;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header-contacts .center{
+    align-items: center;
 }
 .header-contacts .item + .item{
     margin-left: 50px;
 }
 .address {color: var(--small-text-color);}
 
-.icon-contacts{
-    margin-right: 10px;
+.icon-contacts{    
     fill: var(--small-text-color);
 }
 .header-contacts .link svg{
@@ -186,6 +189,9 @@ button {
 }
 .header-contacts .link{
     transition:fill var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
+}
+.header-contacts a{
+    align-items: center;
 }
 .header-contacts .link:hover svg,
 .header-contacts .link:focus svg{fill:var(--accent-color);fill:var(--accent-color)}
@@ -199,7 +205,7 @@ fill:var(--accent-color)}
 .current::after{
     position: absolute;
     content:'';
-    bottom: -32px;
+    bottom: -33px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -504,6 +510,7 @@ color: #FFFFFF;
     line-height: 1.625;
     letter-spacing: 0.03em;
     background: #F5F4FA;
+    border: none;
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
     
